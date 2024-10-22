@@ -6,7 +6,10 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-image: url('https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg');
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,13 +21,25 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 600px;
     text-align: center;
   }
+  .darkmode_btn {
+    background-color: black;
+    color: white;
+    border-radius: 13rem;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
   
+  .dark-btn-a {
+    background-color: white;
+    color: black;
+  }
   h1 {
     margin-bottom: 20px;
-    color: #333;
+  
   }
   
   .form-group {
@@ -64,6 +79,26 @@
   #conversion-result {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    
+  }
+  /* dark */
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
   }
   
+  .dark-mode input,
+  .dark-mode select {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+  }
+  
+  .dark-mode button {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode .result {
+    color: white;
+  }

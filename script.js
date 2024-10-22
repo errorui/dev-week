@@ -54,11 +54,18 @@ const exchangeRates = {
   
  
     const convertedAmount = (amount * exchangeRate).toFixed(2);
-  
+   
    
     document.getElementById('conversion-result').innerText = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
   }
   
- 
-  document.getElementById('convertButton').addEventListener('click', convertCurrency);
+
   
+  document.getElementById('convertButton').addEventListener('click', convertCurrency);
+  // dark mode
+  document.getElementById('darkmode').addEventListener('click', () => {
+    document.querySelector('.container').classList.toggle('dark-mode');
+    document.querySelector('.result').classList.toggle('dark-mode');
+    document.getElementById('darkmode').classList.toggle('dark-btn-a');
+    
+  });
